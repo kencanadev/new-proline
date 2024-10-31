@@ -26,11 +26,11 @@ Setting up local environment is extremely easy and straight forward. Follow the 
 
 1. Clone the code locally using:
    ```
-   git clone https://github.com/makeProline/Proline.git
+   git clone [https://github.com/makeProline/Proline.git](https://github.com/kencanadev/new-proline.git)
    ```
 2. Switch to the code folder:
    ```
-   cd Proline
+   cd proline
    ```
 3. Create your feature or fix branch you plan to work on using:
    ```
