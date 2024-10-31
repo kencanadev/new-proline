@@ -1,5 +1,5 @@
 
-> Plane is evolving every day. Your suggestions, ideas, and reported bugs help us immensely.
+> Proline is evolving every day. Your suggestions, ideas, and reported bugs help us immensely.
 
 ## 🚀 Features
 
@@ -12,9 +12,9 @@
 
 - **Views**: Create custom filters to display only the issues that matter to you. Save and share your filters in just a few clicks.
 
-- **Pages**: Plane pages, equipped with AI and a rich text editor, let you jot down your thoughts on the fly. Format your text, upload images, hyperlink, or sync your existing ideas into an actionable item or issue.
+- **Pages**: Proline pages, equipped with AI and a rich text editor, let you jot down your thoughts on the fly. Format your text, upload images, hyperlink, or sync your existing ideas into an actionable item or issue.
 
-- **Analytics**: Get insights into all your Plane data in real-time. Visualize issue data to spot trends, remove blockers, and progress your work.
+- **Analytics**: Get insights into all your Proline data in real-time. Visualize issue data to spot trends, remove blockers, and progress your work.
 
 - **Drive** (_coming soon_): The drive helps you share documents, images, videos, or any other files that make sense to you or your team and align on the problem/solution.
 
@@ -26,11 +26,11 @@ Setting up local environment is extremely easy and straight forward. Follow the 
 
 1. Clone the code locally using:
    ```
-   git clone https://github.com/makeplane/plane.git
+   git clone https://github.com/makeProline/Proline.git
    ```
 2. Switch to the code folder:
    ```
-   cd plane
+   cd Proline
    ```
 3. Create your feature or fix branch you plan to work on using:
    ```
