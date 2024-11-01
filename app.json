@@ -1,9 +1,9 @@
 {
-  "name": "Plane",
-  "description": "Plane helps you track your issues, epics, and product roadmaps.",
-  "repository": "http://github.com/makeplane/plane",
-  "logo": "https://avatars.githubusercontent.com/u/115727700?s=200&v=4",
-  "website": "https://plane.so/",
+  "name": "Proline",
+  "description": "Proline helps you track your issues, epics, and product roadmaps.",
+  "repository": "https://github.com/kencanadev/new-proline.git",
+  "logo": "https://private-user-images.githubusercontent.com/181458237/382239263-629e3c38-d5ea-416a-96b6-8fdb92bc2f32.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzA0NTM1NTUsIm5iZiI6MTczMDQ1MzI1NSwicGF0aCI6Ii8xODE0NTgyMzcvMzgyMjM5MjYzLTYyOWUzYzM4LWQ1ZWEtNDE2YS05NmI2LThmZGI5MmJjMmYzMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTEwMVQwOTI3MzVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMGQwNzZjNWQ1YTllNDgwNTlkZmRjZjFjOWJmY2Q4OGJlODJhMWYxNTk1NzgyMjVlZDdiOTkyOGY0Mjk0ZTFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VZIGPLWULc1GohwWrMqJVPTW5xuTfBfPWwrBOhTfFOU",
+  "website": "https://proline.kencana.co.id/",
   "success_url": "/",
   "stack": "heroku-22",
   "keywords": [
