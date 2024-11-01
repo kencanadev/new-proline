@@ -51,7 +51,8 @@ services:
     depends_on:
       - plane-db
       - plane-redis
-
+    ports:
+      - "8000:8000"
   worker:
     container_name: bgworker
     build:
@@ -123,6 +124,8 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
 
   plane-redis:
     container_name: plane-redis
@@ -130,7 +133,8 @@ services:
     restart: always
     volumes:
       - redisdata:/data
-
+    ports:
+      - "6379:6379"  # Redis default port
   plane-mq:
     container_name: plane-mq
     image: rabbitmq:3.13.6-management-alpine
@@ -143,7 +147,9 @@ services:
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST}
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
-
+    ports:
+      - "5672:5672"       # RabbitMQ main port
+      - "15672:15672"     # RabbitMQ management port
   plane-minio:
     container_name: plane-minio
     image: minio/minio
@@ -154,7 +160,9 @@ services:
     environment:
       MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID}
       MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY}
-
+    ports:
+          - "9000:9000"       # MinIO port
+          - "9090:9090"       # MinIO console port
   # Comment this if you already have a reverse proxy running
   proxy:
     container_name: proxy

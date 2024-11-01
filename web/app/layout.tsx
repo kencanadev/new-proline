@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   keywords:
     "software development, plan, ship, software, accelerate, code management, release management, project management, issue tracking, agile, scrum, kanban, collaboration",
-  instagram: {
+  twitter: {
     site: "@juanakbarr1",
   },
 };
