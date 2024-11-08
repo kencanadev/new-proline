@@ -123,7 +123,7 @@ export const getExtensions: () => Promise<Extension[]> = async () => {
             redisClient.disconnect();
           }
           manualLogger.warn(
-            `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple plane live servers)`,
+            `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple proline live servers)`,
             error
           );
           reject(error);
@@ -137,13 +137,13 @@ export const getExtensions: () => Promise<Extension[]> = async () => {
       });
     } catch (error) {
       manualLogger.warn(
-        `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple plane live servers)`,
+        `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple proline live servers)`,
         error
       );
     }
   } else {
     manualLogger.warn(
-      "Redis URL is not set, continuing without Redis (you won't be able to sync data between multiple plane live servers)"
+      "Redis URL is not set, continuing without Redis (you won't be able to sync data between multiple proline live servers)"
     );
   }
 

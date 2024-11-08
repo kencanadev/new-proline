@@ -11,7 +11,7 @@ export type ProductUpdatesProps = {
 export const ProductUpdates: FC<ProductUpdatesProps> = observer(() => (
   <CustomMenu.MenuItem>
     <Link
-      href="https://go.plane.so/p-changelog"
+      href="#"
       target="_blank"
       className="flex w-full items-center justify-start text-xs hover:bg-custom-background-80"
     >

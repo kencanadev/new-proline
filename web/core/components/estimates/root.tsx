@@ -81,14 +81,7 @@ export const EstimateRoot: FC<TEstimateRoot> = observer((props) => {
                 <h3 className="text-lg font-medium text-custom-text-100">Archived estimates</h3>
                 <p className="text-sm text-custom-text-200">
                   Estimates have gone through a change, these are the estimates you had in your older versions which
-                  were not in use. Read more about them&nbsp;
-                  <a
-                    href={"https://docs.plane.so/core-concepts/projects/run-project#estimate"}
-                    target="_blank"
-                    className="text-custom-primary-100/80 hover:text-custom-primary-100"
-                  >
-                    here.
-                  </a>
+                  were not in use.
                 </p>
               </div>
               <EstimateList estimateIds={archivedEstimateIds} isAdmin={isAdmin} />

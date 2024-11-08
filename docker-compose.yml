@@ -107,6 +107,8 @@ services:
       dockerfile: ./live/Dockerfile.live
       args:
         DOCKER_BUILDKIT: 1
+    env_file:
+      - ./live/.env
     restart: always
     command: node live/dist/server.js
 

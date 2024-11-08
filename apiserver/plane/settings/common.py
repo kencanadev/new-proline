@@ -42,7 +42,7 @@ service_name = os.environ.get("SERVICE_NAME", "plane-ce-api")
 resource = Resource.create({"service.name": service_name})
 trace.set_tracer_provider(TracerProvider(resource=resource))
 # Configure the OTLP exporter
-otel_endpoint = os.environ.get("OTLP_ENDPOINT", "https://telemetry.plane.so")
+otel_endpoint = os.environ.get("OTLP_ENDPOINT", "")
 otlp_exporter = OTLPSpanExporter(endpoint=otel_endpoint)
 span_processor = BatchSpanProcessor(otlp_exporter)
 trace.get_tracer_provider().add_span_processor(span_processor)

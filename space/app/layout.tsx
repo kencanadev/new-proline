@@ -9,17 +9,17 @@ import "@/styles/globals.css";
 import { ToastProvider } from "@/lib/toast-provider";
 
 export const metadata: Metadata = {
-  title: "Plane Publish | Make your Plane boards public with one-click",
-  description: "Plane Publish is a customer feedback management tool built on top of plane.so",
+  title: "Proline Publish | Make your Proline boards public with one-click",
+  description: "Proline Publish is a customer feedback management tool built on top of proline.com",
   openGraph: {
-    title: "Plane Publish | Make your Plane boards public with one-click",
-    description: "Plane Publish is a customer feedback management tool built on top of plane.so",
-    url: "https://sites.plane.so/",
+    title: "Proline Publish | Make your Proline boards public with one-click",
+    description: "Proline Publish is a customer feedback management tool built on top of proline.com",
+    url: "https://sites.Proline.so/",
   },
   keywords:
     "software development, customer feedback, software, accelerate, code management, release management, project management, issue tracking, agile, scrum, kanban, collaboration",
   twitter: {
-    site: "@planepowers",
+    site: "@juanakbarrr1",
   },
 };
 

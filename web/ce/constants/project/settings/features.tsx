@@ -67,7 +67,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
       },
       inbox: {
         property: "inbox_view",
-        title: "Intake",
+        title: "Desk",
         description: "Consider and discuss issues before you add them to your project.",
         icon: <Intake className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
         isPro: false,
@@ -75,18 +75,5 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
       },
     },
   },
-  project_others: {
-    title: "Work management",
-    description: "Available only on some plans as indicated by the label next to the feature below.",
-    featureList: {
-      is_time_tracking_enabled: {
-        property: "is_time_tracking_enabled",
-        title: "Time Tracking",
-        description: "Log time, see timesheets, and download full CSVs for your entire workspace.",
-        icon: <Timer className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: true,
-        isEnabled: false,
-      },
-    },
-  },
+
 };

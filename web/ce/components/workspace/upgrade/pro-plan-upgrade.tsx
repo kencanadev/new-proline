@@ -45,8 +45,8 @@ export const ProPlanUpgrade: FC<ProPlanUpgradeProps> = (props) => {
   const yearlyPrice = PRO_PLAN_PRICES.find((price) => price.recurring === "year")?.price ?? 0;
   const yearlyDiscount = calculateYearlyDiscount(monthlyPrice, yearlyPrice);
   // env
-  const PRO_PLAN_MONTHLY_PAYMENT_URL = "https://app.plane.so/upgrade/pro/self-hosted?plan=month";
-  const PRO_PLAN_YEARLY_PAYMENT_URL = "https://app.plane.so/upgrade/pro/self-hosted?plan=year";
+  const PRO_PLAN_MONTHLY_PAYMENT_URL = "#";
+  const PRO_PLAN_YEARLY_PAYMENT_URL = "#";
 
   return (
     <div className="py-4 px-2 border border-custom-primary-200/30 rounded-xl bg-custom-primary-200/5">

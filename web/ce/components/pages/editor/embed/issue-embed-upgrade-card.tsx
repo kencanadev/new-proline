@@ -22,8 +22,7 @@ export const IssueEmbedUpgradeCard: React.FC<any> = (props) => (
         </p>
       </div>
       <a
-        href="https://plane.so/pro"
-        target="_blank"
+        href="/"
         rel="noopener noreferrer"
         className={cn(getButtonStyling("primary", "md"), "no-underline")}
       >

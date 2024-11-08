@@ -112,76 +112,20 @@ export const TourRoot: React.FC<Props> = observer((props) => {
                   <Button
                     variant="primary"
                     onClick={() => {
-                      captureEvent(PRODUCT_TOUR_STARTED);
-                      setStep("issues");
-                    }}
-                  >
-                    Take a Product Tour
-                  </Button>
-                  <button
-                    type="button"
-                    className="bg-transparent text-xs font-medium text-custom-primary-100 outline-custom-text-100"
-                    onClick={() => {
                       captureEvent(PRODUCT_TOUR_SKIPPED);
                       onComplete();
                     }}
                   >
-                    No thanks, I will explore it myself
-                  </button>
+                    Thank's
+                  </Button>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
       ) : (
-        <div className="relative grid h-3/5 w-4/5 grid-cols-10 overflow-hidden rounded-[10px] bg-custom-background-100 sm:h-3/4 md:w-1/2 lg:w-3/5">
-          <button
-            type="button"
-            className="fixed right-[9%] top-[19%] z-10 -translate-y-1/2 translate-x-1/2 cursor-pointer rounded-full border border-custom-text-100 p-1 sm:top-[11.5%] md:right-[24%] lg:right-[19%]"
-            onClick={onComplete}
-          >
-            <X className="h-3 w-3 text-custom-text-100" />
-          </button>
-          <TourSidebar step={step} setStep={setStep} />
-          <div className="col-span-10 h-full overflow-hidden lg:col-span-7">
-            <div
-              className={`flex h-1/2 items-end overflow-hidden bg-custom-primary-100 sm:h-3/5 ${currentStepIndex % 2 === 0 ? "justify-end" : "justify-start"
-                }`}
-            >
-              <Image src={currentStep?.image} alt={currentStep?.title} />
-            </div>
-            <div className="flex h-1/2 flex-col overflow-y-auto p-4 sm:h-2/5">
-              <h3 className="font-semibold sm:text-xl">{currentStep?.title}</h3>
-              <p className="mt-3 text-sm text-custom-text-200">{currentStep?.description}</p>
-              <div className="mt-3 flex h-full items-end justify-between gap-4">
-                <div className="flex items-center gap-4">
-                  {currentStep?.prevStep && (
-                    <Button variant="neutral-primary" onClick={() => setStep(currentStep.prevStep ?? "welcome")}>
-                      Back
-                    </Button>
-                  )}
-                  {currentStep?.nextStep && (
-                    <Button variant="primary" onClick={() => setStep(currentStep.nextStep ?? "issues")}>
-                      Next
-                    </Button>
-                  )}
-                </div>
-                {currentStepIndex === TOUR_STEPS.length - 1 && (
-                  <Button
-                    variant="primary"
-                    onClick={() => {
-                      setTrackElement("Product tour");
-                      onComplete();
-                      toggleCreateProjectModal(true);
-                    }}
-                  >
-                    Create your first project
-                  </Button>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
+        <></>
       )}
     </>
   );

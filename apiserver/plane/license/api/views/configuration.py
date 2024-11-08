@@ -97,9 +97,9 @@ class EmailCredentialCheckEndpoint(BaseAPIView):
             use_ssl=EMAIL_USE_SSL == "1",
         )
         # Prepare email details
-        subject = "Email Notification from Plane"
+        subject = "Email Notification from Proline"
         message = (
-            "This is a sample email notification sent from Plane application."
+            "This is a sample email notification sent from Proline application."
         )
         # Send the email
         try:

@@ -66,7 +66,7 @@
       "value": ""
     },
     "WEB_URL": {
-      "description": "Web URL for Plane this will be used for redirections in the emails",
+      "description": "Web URL for Proline this will be used for redirections in the emails",
       "value": ""
     },
     "GITHUB_CLIENT_SECRET": {

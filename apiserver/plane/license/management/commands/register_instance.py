@@ -52,7 +52,7 @@ class Command(BaseCommand):
             payload = self.read_package_json()
 
             instance = Instance.objects.create(
-                instance_name="Plane Community Edition",
+                instance_name="Proline Community Edition",
                 instance_id=secrets.token_hex(12),
                 license_key=None,
                 current_version=payload.get("version"),

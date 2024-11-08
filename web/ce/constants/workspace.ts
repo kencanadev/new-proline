@@ -21,14 +21,6 @@ export const WORKSPACE_SETTINGS = {
     highlight: (pathname: string, baseUrl: string) => pathname === `${baseUrl}/settings/members/`,
     Icon: SettingIcon,
   },
-  "billing-and-plans": {
-    key: "billing-and-plans",
-    label: "Billing and plans",
-    href: `/settings/billing`,
-    access: [EUserPermissions.ADMIN],
-    highlight: (pathname: string, baseUrl: string) => pathname === `${baseUrl}/settings/billing/`,
-    Icon: SettingIcon,
-  },
   export: {
     key: "export",
     label: "Exports",
@@ -65,7 +57,6 @@ export const WORKSPACE_SETTINGS_LINKS: {
 }[] = [
   WORKSPACE_SETTINGS["general"],
   WORKSPACE_SETTINGS["members"],
-  WORKSPACE_SETTINGS["billing-and-plans"],
   WORKSPACE_SETTINGS["export"],
   WORKSPACE_SETTINGS["webhooks"],
   WORKSPACE_SETTINGS["api-tokens"],
