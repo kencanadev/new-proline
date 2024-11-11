@@ -75,18 +75,7 @@ export const SidebarHelpSection: React.FC<WorkspaceHelpSectionProps> = observer(
             maxHeight="lg"
             closeOnSelect
           >
-            <CustomMenu.MenuItem>
-              <a
-                href="https://go.plane.so/p-docs"
-                target="_blank"
-                className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
-              >
-                <FileText className="h-3.5 w-3.5 text-custom-text-200" size={14} />
-                <span className="text-xs">Documentation</span>
-              </a>
-            </CustomMenu.MenuItem>
-
-            <CustomMenu.MenuItem>
+           <CustomMenu.MenuItem>
               <button
                 type="button"
                 onClick={() => toggleShortcutModal(true)}
